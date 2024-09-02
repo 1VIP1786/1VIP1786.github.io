@@ -39,7 +39,7 @@ Feel free to reach out via [📧 email](mailto:vipulpatil1786@gmail.com) for int
 
 {{< timeline >}}
 
-{{< timelineItem icon="🎓" header="Bachelor of Technology in Computer Science and Engineering" badge="Ongoing" subheader="University Name" >}}
+{{< timelineItem icon="🎓" header="Bachelor of Technology in Computer Science and Engineering" badge="Ongoing" subheader=" Parul University" >}}
 **Specialization**: _DevOps & Augmented Reality_
 - 📘 Coursework includes advanced topics in Cloud Computing, DevOps, Distributed Systems, and Data Engineering, providing a strong foundation for modern tech solutions.
 - 🧪 Engaged in research and projects focused on optimizing CI/CD workflows and integrating them with scalable cloud infrastructure.
