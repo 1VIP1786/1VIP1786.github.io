@@ -11,7 +11,7 @@ node_modules
 
 # Hugo
 public
-resources
+#resources
 
 # Executable may be added to repository
 hugo.exe
