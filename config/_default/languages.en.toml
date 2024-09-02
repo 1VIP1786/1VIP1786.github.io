@@ -8,23 +8,19 @@ title = "Subhasmita Swain"
   displayName = "EN"
   isoCode = "en"
   rtl = false
-  dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
-  copyright = "Copy, _right?_ :thinking_face:"
+  dateFormat = "13 August 2002"
+  copyright = "<div class='theme-text'>ख़म्मा गणी 🙏 ...</div>"
 
- [author]
-   name = "subhasmita"
-   image = "img/prof.jpeg"
-   headline = "R&D Engineer [@Civo](https://www.civo.com/)"
-   bio = "I write about application development, tooling, and best practices."
-
-   links = [
-      { x-twitter = "https://x.com/iam_subhasmita" },
-      { linkedin = "https://www.linkedin.com/in/subhasmita-swain/" },
-      { github = "https://github.com/SubhasmitaSw"},
-      { medium = "https://medium.com/@SubhasmitaSw" },
-      { stack-overflow = "https://stackoverflow.com/users/userid/username" },
-      { email = "mailto:subhasmitaswain232@gmail.com" },
-   ]
+[author]
+  name = "VIPUL PATIL"
+  #image = "img/vipul.png"
+  headline = "Aspiring DevOps Engineer"
+  bio = "I write about DevOps, Augmented Reality, and best practices."
+  links = [
+    { x-twitter = "https://x.com/thisisvipull" },
+    { linkedin = "https://www.linkedin.com/in/vipulpatil1786/" },
+    { github = "https://github.com/1VIP1786" },
+    { medium = "https://medium.com/@vipulpatil1786" },
+    { stack-overflow = "https://stackoverflow.com/users/22463082/vipul-patil" },
+    { email = "mailto:vipulpatil1786@gmail.com" },
+  ]

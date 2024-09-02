@@ -2,20 +2,25 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/
 
-# theme = "blowfish"
-baseURL = "https://subhasmita.in/"
+baseURL = "https://yourusername.github.io/"
 defaultContentLanguage = "en"
+title = "Your Site Title"  # Add your site's title here
 
-# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+# Optional: Pluralize list titles for non-English languages
+# pluralizeListTitles = "true" # find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
+theme = "blowfish"
 enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
-
 buildDrafts = false
 buildFuture = false
 
-# googleAnalytics = "G-XXXXXXXXX"
+# Timeout setting
+timeout = "6m"  # 6 minutes for larger sites
+
+# Uncomment and replace with your Google Analytics ID if you're using it
+# googleAnalytics = "G-XXXXXXXXX"
 
 [imaging]
   anchor = 'Center'
@@ -63,3 +68,14 @@ buildFuture = false
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+# Optional: Minification settings for performance improvements
+[minify]
+  minifyOutput = true
+  minifyCSS = true
+  minifyJS = true
+
+# Optional: Configure caching (if supported by your setup)
+[caching]
+  enabled = true
+  cacheDuration = "24h"
