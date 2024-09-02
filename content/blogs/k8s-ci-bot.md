@@ -1,9 +1,7 @@
 ---
-title: "K8s CI Bot Helper Job: automating \"make update\""
-date: 2022-04-15
-summary: "This article provides a workaround for issues causing pull requests to be held up by test failures when contributing to the Kubernetes project on a Windows PC."
-
-externalUrl: "https://www.kubernetes.dev/blog/2022/03/15/k8s-triage-bot-helper-ci-job/"
-
-tags: ["Open Source", "Kubernetes", "CI/CD"]
+title: "Networking Fundamentals in Google Cloud"
+date: 2022-06-15
+summary: "Through this quest, I gained hands-on experience in Google Cloud networking, mastering VPCs, enterprise-grade load balancers, and specialized tools. This practical knowledge equips me to build and manage robust networks with confidence."
+externalUrl: "https://www.cloudskillsboost.google/public_profiles/aea4d0cb-a839-4c45-804d-2dce412ee35f/badges/2180270"
+tags: ["☁️ GCP", "🔗 Networking"]
 ---

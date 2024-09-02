@@ -9,5 +9,5 @@ title: "custom frontpage"
   breakLines=true
   loop=false
 >}}
-striving to craft byte-sized brilliance with grace and grit.
+Pursuing the art of crafting concise brilliance with poise and perseverance.
 {{< /typeit >}}

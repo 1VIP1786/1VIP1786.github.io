@@ -1,9 +1,9 @@
 ---
-title: "A glance inside the beginnings of my Outreachy Internship"
-date: 2022-06-06
+title: "Gained Hands-On Reliable Google Cloud Infrastructure: Design and Process"
+date: 2022-07-21
 draft: false
-summary: ”Everything happens for a reason and at the right time”
-externalUrl: "https://medium.com/@SubhasmitaSw/a-glance-inside-the-beginnings-of-my-outreachy-internship-f2395aa37dba"
+summary: "I refined my expertise in crafting scalable and resilient solutions on Google Cloud, leveraging advanced design patterns beyond my previous experience with Compute Engine and Kubernetes Engine."
+externalUrl: "https://www.cloudskillsboost.google/public_profiles/aea4d0cb-a839-4c45-804d-2dce412ee35f/badges/2400166"
 showReadingTime: false
 _build:
   render: "true"

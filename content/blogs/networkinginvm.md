@@ -1,9 +1,7 @@
 ---
-title: "Networking in Virtual Machines"
+title: "Cloud Architecture"
 date: 2023-03-01
-summary: "This blog covers networking essentials for virtual machines, including types, setup instructions, connectivity verification, troubleshooting tips, and diagnostic tools."
-
-externalUrl: "https://subhasmita.hashnode.dev/networking-in-virtual-machines"
-
-tags: ["Virtualization", "Networking"]
+summary: "Achieving the Google Cloud architecture badge honed my skills in IAM, networking, and Kubernetes Engine, preparing me for advanced cloud solutions and the Professional Cloud Architect Certification."
+externalUrl: "https://www.cloudskillsboost.google/public_profiles/aea4d0cb-a839-4c45-804d-2dce412ee35f/badges/2360206"
+tags: ["🐳 Kubernetes", "🏛️ Architecture", "🔒 IAM"]
 ---

@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Subhasmita Swain"
+title = "Vipul patil"
 
 
 [params]
@@ -13,7 +13,7 @@ title = "Subhasmita Swain"
 
 [author]
   name = "VIPUL PATIL"
-  #image = "img/vipul.png"
+  image = "img/prof.jpeg"
   headline = "Aspiring DevOps Engineer"
   bio = "I write about DevOps, Augmented Reality, and best practices."
   links = [
