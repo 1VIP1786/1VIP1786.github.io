@@ -14,7 +14,7 @@ title = "Vipul patil"
 [author]
   name = "VIPUL PATIL"
   image = "img/prof.jpeg"
-  headline = "DevOps Engineer"
+  headline = "Devops Engineer"
   bio = "I write about DevOps, Augmented Reality, and best practices."
   links = [
     { x-twitter = "https://x.com/thisisvipull" },
