@@ -1,0 +1,11 @@
+# build output
+public/
+resources/_gen/
+
+# Hugo internals
+.hugo_build.lock
+
+# OS/editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json

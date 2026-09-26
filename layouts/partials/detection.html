@@ -1,0 +1,59 @@
+{{ $d := .Site.Data.site }}
+<section id="detection-engineering" class="section section-bordered">
+  <p class="eyebrow">Detection Engineering</p>
+  <h2 class="h2">From telemetry to tuned detection logic</h2>
+
+  <div class="card mt-lg">
+    <h3 class="card-title">Detection Engineering Loop</h3>
+    {{ partial "pipeline.html" (dict "steps" $d.engineeringLoop "direction" "horizontal") }}
+  </div>
+
+  <div class="card mt-md">
+    <h3 class="card-title">Detection Engineering Mindset</h3>
+    <ol class="mindset-list">
+      {{ range $i, $s := $d.detectionMindset }}
+        <li><span class="step-num">{{ printf "%02d" (add $i 1) }}</span>{{ $s }}</li>
+      {{ end }}
+    </ol>
+  </div>
+
+  <h3 class="h3 mt-xl">Sysmon Telemetry Reference</h3>
+  <p class="lede-sm">The event types this lab's detections are built on, and why each one matters to a SOC analyst.</p>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr><th>Event</th><th>Captures</th><th>Why it matters</th><th>Suspicious signal</th></tr>
+      </thead>
+      <tbody>
+        {{ range .Site.Data.sysmon_events }}
+          <tr>
+            <td class="mono-cell"><span class="accent mono">{{ .id }}</span><div class="event-title">{{ .title }}</div></td>
+            <td>{{ .captures }}</td>
+            <td>{{ .why }}</td>
+            <td>{{ .suspicious }}</td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-2 mt-xl align-start">
+    <div>
+      <h3 class="h3">ProcessGUID Correlation</h3>
+      <p>
+        Sysmon assigns a unique <code>ProcessGuid</code> to every process
+        execution. Correlating every subsequent event — child processes, network connections, file writes,
+        registry changes, DNS queries — against that same ProcessGuid reconstructs the full behavioral
+        story of one execution, rather than looking at isolated log lines. This is the core technique
+        behind every investigation in this portfolio.
+      </p>
+      <p class="fine-print">
+        This is a detection-engineering / research technique applied manually in Kibana queries — not a
+        claim of having built a production XDR platform.
+      </p>
+    </div>
+    <div class="card">
+      {{ partial "pipeline.html" (dict "steps" $d.correlationChain "direction" "vertical") }}
+    </div>
+  </div>
+</section>

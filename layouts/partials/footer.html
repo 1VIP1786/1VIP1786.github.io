@@ -1,0 +1,12 @@
+{{ $profile := .Site.Data.site.profile }}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© {{ now.Format "2006" }} {{ $profile.name }}. Built with Hugo &amp; hand-written CSS.</p>
+    <div class="footer-links">
+      <a href="{{ $profile.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ $profile.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:{{ $profile.email }}">Email</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>

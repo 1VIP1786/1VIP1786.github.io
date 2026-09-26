@@ -1,0 +1,60 @@
+baseURL = "https://vipul-patil-cybersecurity.netlify.app/"
+languageCode = "en-us"
+title = "Vipul Patil | Cybersecurity Analyst — SOC, SIEM & Threat Detection"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "Portfolio of Vipul Patil, an M.Tech Cybersecurity student specializing in SOC operations, SIEM, threat detection, and detection engineering, with a hands-on Purple Team lab built on the Elastic Stack."
+  author = "Vipul Patil"
+  keywords = "Vipul Patil Cybersecurity, Cybersecurity Analyst India, SOC Analyst India, SOC Analyst Vadodara, Cybersecurity Analyst Vadodara, Security Analyst, Detection Engineer, SIEM Analyst, Elastic Security, Threat Detection, Cybersecurity Portfolio"
+
+[[menu.main]]
+  name = "About"
+  url = "#about"
+  weight = 10
+
+[[menu.main]]
+  name = "SOC Lab"
+  url = "#soc-lab"
+  weight = 20
+
+[[menu.main]]
+  name = "Investigations"
+  url = "#investigations"
+  weight = 30
+
+[[menu.main]]
+  name = "Detection Eng."
+  url = "#detection-engineering"
+  weight = 40
+
+[[menu.main]]
+  name = "Tools & Frameworks"
+  url = "#toolkit"
+  weight = 50
+
+[[menu.main]]
+  name = "Assessment"
+  url = "#security-assessment"
+  weight = 60
+
+[[menu.main]]
+  name = "Research"
+  url = "#background"
+  weight = 70
+
+[[menu.main]]
+  name = "Interview Prep"
+  url = "#interview-prep"
+  weight = 80
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 100
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

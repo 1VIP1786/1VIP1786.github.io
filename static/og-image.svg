@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#05070a"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#5ee1ff" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="60" y="60" width="86" height="86" rx="14" fill="#2fd0ff" fill-opacity="0.12" stroke="#2fd0ff" stroke-opacity="0.5"/>
+  <text x="80" y="118" font-family="JetBrains Mono, monospace" font-size="34" fill="#5ee1ff" font-weight="700">VP</text>
+  <text x="60" y="250" font-family="Inter, sans-serif" font-size="56" fill="#ffffff" font-weight="800">Vipul Patil</text>
+  <text x="60" y="310" font-family="Inter, sans-serif" font-size="32" fill="#5ee1ff" font-weight="600">Cybersecurity Analyst | SOC | SIEM | Threat Detection</text>
+  <text x="60" y="370" font-family="Inter, sans-serif" font-size="24" fill="#9fb0c3">M.Tech Cybersecurity · Purple Team SOC Lab · Elastic Stack</text>
+  <text x="60" y="560" font-family="JetBrains Mono, monospace" font-size="20" fill="#546a83">github.com/1VIP1786 · linkedin.com/in/vipulpatil1786</text>
+</svg>

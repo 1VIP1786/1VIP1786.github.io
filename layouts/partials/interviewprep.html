@@ -1,0 +1,35 @@
+{{ $profile := .Site.Data.site.profile }}
+{{ $categories := slice
+  (dict "name" "SIEM / Detection" "items" (slice "Elastic Stack" "Elasticsearch" "Logstash" "Kibana"))
+  (dict "name" "Endpoint Telemetry" "items" (slice "Sysmon" "Winlogbeat"))
+  (dict "name" "Adversary Simulation" "items" (slice "Atomic Red Team" "MITRE ATT&CK"))
+  (dict "name" "Network Security" "items" (slice "Wireshark" "Nmap"))
+  (dict "name" "Web Security" "items" (slice "Burp Suite"))
+  (dict "name" "Security Testing" "items" (slice "Metasploit"))
+  (dict "name" "Analyst Scenarios" "items" (slice "Alert triage" "Investigation" "Threat hunting" "Detection" "Incident response" "Cross-tool investigations"))
+}}
+<section id="interview-prep" class="section section-bordered">
+  <p class="eyebrow">Cybersecurity Interview Preparation</p>
+  <h2 class="h2">A structured interview-prep library</h2>
+  <p class="lede">
+    A structured interview-preparation library covering security tools, technologies, concepts and
+    scenarios relevant to my target cybersecurity roles.
+  </p>
+
+  <a href="{{ $profile.interviewPrepDrive }}" target="_blank" rel="noopener" class="btn btn-primary mt-md">
+    Open Interview Preparation Library →
+  </a>
+
+  <div class="grid-3 mt-lg">
+    {{ range $categories }}
+      <div class="card">
+        <h3 class="accent-heading">{{ .name }}</h3>
+        <div class="pill-row mt-sm">{{ range .items }}<span class="pill">{{ . }}</span>{{ end }}</div>
+      </div>
+    {{ end }}
+  </div>
+
+  <p class="mt-md muted">
+    The complete interview question bank is maintained externally in the linked preparation library.
+  </p>
+</section>

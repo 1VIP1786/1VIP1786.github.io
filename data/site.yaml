@@ -1,0 +1,120 @@
+profile:
+  name: "VIPUL"
+  location: "Vadodara, Gujarat, India"
+  headline: "Cybersecurity Analyst | SOC | SIEM | Threat Detection"
+  subheadline: "M.Tech Cybersecurity student building hands-on security operations, threat detection, incident investigation and defensive security systems."
+  email: "vipulpatil1786@gmail.com"
+  github: "https://github.com/1VIP1786"
+  linkedin: "https://linkedin.com/in/vipulpatil1786"
+  resumePdf: "/assets/Vipul_Patil_Cybersecurity_Resume.pdf"
+  interviewPrepDrive: "https://drive.google.com/drive/folders/1rdKI6SqJwrHfwi06t9hAuAAwWThnRmGD?usp=sharing"
+
+metrics:
+  - value: "3,000+"
+    label: "Windows security events analyzed"
+  - value: "10+"
+    label: "MITRE ATT&CK techniques simulated / investigated"
+  - value: "Elastic Stack"
+    label: "Hands-on SIEM environment"
+  - value: "M.Tech"
+    label: "Cybersecurity, Parul University"
+
+socPipeline:
+  - "Windows VM"
+  - "Sysmon"
+  - "Winlogbeat"
+  - "Logstash"
+  - "Elasticsearch"
+  - "Kibana"
+  - "Detection / Investigation"
+  - "MITRE ATT&CK Mapping"
+
+purpleTeamPipeline:
+  - "Atomic Red Team"
+  - "Adversary Simulation"
+  - "Windows Telemetry"
+  - "SIEM"
+  - "Detection"
+  - "Investigation"
+  - "MITRE ATT&CK Mapping"
+
+correlationChain:
+  - "Process Creation"
+  - "Child Process"
+  - "Network Connection"
+  - "File Creation"
+  - "Registry Modification"
+  - "DNS Query"
+
+engineeringLoop:
+  - "Threat"
+  - "ATT&CK Technique"
+  - "Adversary Simulation"
+  - "Telemetry"
+  - "Detection Logic"
+  - "Alert"
+  - "Investigation"
+  - "Validation"
+  - "Tuning"
+
+vaWorkflow:
+  - "Reconnaissance"
+  - "Nmap Scanning"
+  - "Service Enumeration"
+  - "Vulnerability Identification"
+  - "Burp Suite / Web Testing"
+  - "Wireshark Traffic Analysis"
+  - "Metasploit Validation (lab only)"
+  - "Risk Analysis"
+  - "Remediation Recommendations"
+
+ismsWorkflow:
+  - "Asset Identification"
+  - "Threat Identification"
+  - "Vulnerability Identification"
+  - "Risk Assessment"
+  - "Control Gap"
+  - "Risk Treatment"
+  - "Policy / Procedure"
+  - "Monitoring"
+
+detectionMindset:
+  - "Understand attacker behavior (ATT&CK technique)"
+  - "Understand available telemetry (Sysmon event types)"
+  - "Build detection logic (Kibana query / rule)"
+  - "Test against realistic activity (Atomic Red Team)"
+  - "Analyze false positives"
+  - "Map confirmed detections to ATT&CK"
+  - "Tune the rule"
+  - "Revalidate against fresh simulation"
+
+ismsChecklist:
+  - "Asset inventory"
+  - "Risk register"
+  - "Threats & vulnerabilities"
+  - "Control gaps"
+  - "Risk treatment plan"
+  - "Access control"
+  - "Endpoint & network security controls"
+  - "Backup controls"
+  - "Incident response notes"
+  - "Business continuity notes"
+  - "Policies & SOPs"
+  - "Audit-readiness checklist"
+
+networkSecurityTags:
+  - "TCP/IP"
+  - "DNS"
+  - "HTTP/HTTPS"
+  - "TLS"
+  - "Ports & Protocols"
+  - "Firewalls"
+  - "IDS/IPS"
+  - "Packet Analysis"
+
+socLabTags:
+  - "3,000+ events analyzed"
+  - "10+ ATT&CK techniques"
+  - "Elastic Stack"
+  - "Sysmon + Winlogbeat"
+  - "Atomic Red Team"

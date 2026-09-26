@@ -1,0 +1,7 @@
+title: "A Systematic Review of Botnet Attacks in Internet of Things (IoT) Networks"
+type: "Academic Research"
+objective: "Review and synthesize existing literature on botnet attack patterns, propagation mechanisms, and mitigation strategies within IoT networks."
+methodology: "Systematic literature review of published academic sources on IoT botnet behavior and defense."
+findings: "Consolidated common attack patterns and propagation methods used by IoT botnets, and the security gaps that enable them."
+implications: "Highlights the growing attack surface introduced by insecure IoT devices and the need for network-level monitoring and segmentation."
+future: "Potential to extend into a hands-on lab simulating IoT botnet traffic patterns for detection practice."

@@ -1,0 +1,17 @@
+{{ $steps := .steps }}
+{{ $direction := .direction | default "horizontal" }}
+{{ if eq $direction "vertical" }}
+  <div class="pipeline pipeline-vertical">
+    {{ range $i, $s := $steps }}
+      <div class="pipeline-node">{{ $s }}</div>
+      {{ if ne (add $i 1) (len $steps) }}<span class="pipeline-arrow">↓</span>{{ end }}
+    {{ end }}
+  </div>
+{{ else }}
+  <div class="pipeline pipeline-horizontal">
+    {{ range $i, $s := $steps }}
+      <div class="pipeline-node">{{ $s }}</div>
+      {{ if ne (add $i 1) (len $steps) }}<span class="pipeline-arrow">→</span>{{ end }}
+    {{ end }}
+  </div>
+{{ end }}

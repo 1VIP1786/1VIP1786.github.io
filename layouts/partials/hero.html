@@ -1,0 +1,22 @@
+{{ $profile := .Site.Data.site.profile }}
+<section id="top" class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="section hero-inner">
+    <p class="eyebrow">Vadodara, Gujarat, India · Open to relocation</p>
+    <h1 class="hero-title">{{ $profile.headline }}</h1>
+    <p class="hero-subtitle">{{ $profile.subheadline }}</p>
+
+    <div class="hero-ctas">
+      <a href="#soc-lab" class="btn btn-primary">Explore SOC Lab</a>
+      <a href="#investigations" class="btn btn-secondary">View Investigations</a>
+      <a href="{{ $profile.resumePdf | relURL }}" target="_blank" rel="noopener" class="btn btn-secondary">Resume</a>
+      <a href="#interview-prep" class="btn btn-secondary">Interview Prep</a>
+    </div>
+
+    <div class="hero-links">
+      <a href="{{ $profile.github }}" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="{{ $profile.linkedin }}" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</section>

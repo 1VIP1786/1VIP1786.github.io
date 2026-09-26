@@ -1,0 +1,52 @@
+{{ $d := .Site.Data.site }}
+<section id="soc-lab" class="section section-bordered">
+  <p class="eyebrow">Flagship Project · Personal Lab</p>
+  <h2 class="h2">Purple Team SOC Lab — Detection, Investigation &amp; Threat Simulation</h2>
+  <p class="lede">
+    A self-built, end-to-end security-monitoring pipeline. Windows telemetry is generated on a
+    lab VM, collected via Sysmon and Winlogbeat, shipped through Logstash, indexed in
+    Elasticsearch, and investigated in Kibana — the same conceptual pipeline used in production
+    SOC environments, built and operated hands-on rather than studied in the abstract.
+  </p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3 class="card-title">Telemetry Pipeline</h3>
+      {{ partial "pipeline.html" (dict "steps" $d.socPipeline "direction" "vertical") }}
+    </div>
+    <div class="card">
+      <h3 class="card-title">Adversary Simulation Loop</h3>
+      {{ partial "pipeline.html" (dict "steps" $d.purpleTeamPipeline "direction" "vertical") }}
+    </div>
+  </div>
+
+  <div class="grid-2 mt-lg">
+    <div class="card">
+      <h3 class="card-title">Setup &amp; Scope</h3>
+      <ul class="list-check">
+        <li>Windows VM instrumented with Sysmon using a tuned configuration for high-value event types.</li>
+        <li>Winlogbeat forwards Sysmon + Windows Event Logs to a Logstash pipeline for parsing/enrichment.</li>
+        <li>Elasticsearch indexes the telemetry; Kibana dashboards and Discover are used for investigation.</li>
+        <li>Atomic Red Team executes individual ATT&amp;CK techniques to generate realistic adversary telemetry.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Lessons Learned &amp; Limitations</h3>
+      <ul class="list-check">
+        <li>Sysmon config tuning matters — default configs are noisy; field selection drives detection quality.</li>
+        <li>ProcessGuid correlation (see below) is essential once event volume grows past a few hundred events.</li>
+        <li>This is a single-host lab, not a multi-endpoint production SOC — detections aren't yet tested at scale.</li>
+        <li>Next step: version-controlled detection rules instead of ad-hoc Kibana queries (see Roadmap).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pill-row mt-md">
+    {{ range $d.socLabTags }}<span class="pill">{{ . }}</span>{{ end }}
+  </div>
+
+  <p class="fine-print">
+    Personal / academic lab project — not a production SOC deployment.
+    Source code and configuration: <a href="{{ $d.profile.github }}" target="_blank" rel="noopener">GitHub ↗</a>
+  </p>
+</section>

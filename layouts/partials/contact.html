@@ -1,0 +1,25 @@
+{{ $profile := .Site.Data.site.profile }}
+{{ $links := slice
+  (dict "label" "Email" "value" $profile.email "href" (printf "mailto:%s" $profile.email))
+  (dict "label" "LinkedIn" "value" "linkedin.com/in/vipulpatil1786" "href" $profile.linkedin)
+  (dict "label" "GitHub" "value" "github.com/1VIP1786" "href" $profile.github)
+  (dict "label" "Resume" "value" "Download PDF" "href" ($profile.resumePdf | relURL))
+  (dict "label" "Interview Prep" "value" "Google Drive Library" "href" $profile.interviewPrepDrive)
+}}
+<section id="contact" class="section section-bordered">
+  <p class="eyebrow">Contact</p>
+  <h2 class="h2">Let's talk about a role</h2>
+  <p class="lede">
+    Open to Security Analyst, SOC Analyst, Detection Engineer, and Information Security Consulting
+    roles — full-time and internship-to-full-time.
+  </p>
+
+  <div class="grid-5 mt-lg">
+    {{ range $links }}
+      <a href="{{ .href }}" {{ if hasPrefix .href "http" }}target="_blank" rel="noopener"{{ end }} class="card contact-card">
+        <p class="label-xs">{{ .label }}</p>
+        <p class="contact-value">{{ .value }}</p>
+      </a>
+    {{ end }}
+  </div>
+</section>

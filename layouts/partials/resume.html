@@ -1,0 +1,16 @@
+{{ $profile := .Site.Data.site.profile }}
+<section id="resume" class="section section-bordered">
+  <div class="card resume-card">
+    <div>
+      <p class="eyebrow">Resume</p>
+      <h2 class="h3-lg mt-xs">One-page, ATS-friendly, cybersecurity-focused</h2>
+      <p class="muted mt-xs">
+        Targets Security Analyst and Information Security Consulting roles.
+      </p>
+    </div>
+    <div class="resume-actions">
+      <a href="{{ $profile.resumePdf | relURL }}" target="_blank" rel="noopener" class="btn btn-secondary">View</a>
+      <a href="{{ $profile.resumePdf | relURL }}" download class="btn btn-primary">Download</a>
+    </div>
+  </div>
+</section>

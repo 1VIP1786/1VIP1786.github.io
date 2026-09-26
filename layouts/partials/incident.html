@@ -1,0 +1,33 @@
+{{ $wf := .Site.Data.soc_workflow }}
+<section class="section section-bordered">
+  <p class="eyebrow">SOC Workflow</p>
+  <h2 class="h2">How an alert becomes an investigation</h2>
+  <div class="card mt-md table-wrap">
+    {{ $steps := slice }}
+    {{ range $wf }}{{ $steps = $steps | append .step }}{{ end }}
+    {{ partial "pipeline.html" (dict "steps" $steps "direction" "horizontal") }}
+  </div>
+  <div class="workflow-grid mt-md">
+    {{ range $wf }}
+      <div class="workflow-item">
+        <p class="accent bold small">{{ .step }}</p>
+        <p class="muted small">{{ .detail }}</p>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="mt-xxl">
+    <p class="eyebrow">Case Study</p>
+    <h3 class="h3-lg mt-xs">Suspicious PowerShell Activity Investigation</h3>
+    <p class="fine-print">Simulated scenario — generated in the Purple Team SOC Lab with Atomic Red Team.</p>
+
+    <div class="grid-2 mt-lg">
+      {{ range .Site.Data.case_study }}
+        <div class="card">
+          <h4 class="accent-heading">{{ .title }}</h4>
+          <p class="mt-xs">{{ .body }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

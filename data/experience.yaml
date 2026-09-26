@@ -1,0 +1,12 @@
+- org: "LetsDefend"
+  role: "SOC Analyst Learning Path — Training / Security Labs"
+  type: "Training"
+  points:
+    - "Completed structured, hands-on training in SOC investigation, alert analysis, and SIEM-based threat detection."
+    - "Practiced incident investigation and security monitoring workflows across simulated SOC scenarios."
+- org: "Parul University"
+  role: "LMS Administrator"
+  type: "Role"
+  points:
+    - "Managed and organized academic content on the university LMS, supporting students and faculty across multiple concurrent requests."
+    - "Documented processes and troubleshot platform issues — skills directly transferable to security-assessment reporting and client interaction."

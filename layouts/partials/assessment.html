@@ -1,0 +1,57 @@
+{{ $d := .Site.Data.site }}
+<section id="security-assessment" class="section section-bordered">
+  <p class="eyebrow">Security Assessment &amp; Risk</p>
+  <h2 class="h2">Vulnerability Assessment, Network Security &amp; ISMS</h2>
+
+  <div class="mt-xl">
+    <h3 class="h3">Security Assessment &amp; Vulnerability Analysis Lab</h3>
+    <p class="lede-sm">
+      A lab-based vulnerability assessment workflow: discover, enumerate, identify, validate, and
+      recommend remediation — the same lifecycle used in professional VA engagements, run against
+      lab targets rather than client infrastructure.
+    </p>
+    <div class="card mt-md table-wrap">
+      {{ partial "pipeline.html" (dict "steps" $d.vaWorkflow "direction" "horizontal") }}
+    </div>
+    <p class="fine-print">Lab / security-assessment project — not a professional client engagement.</p>
+  </div>
+
+  <div class="grid-2 mt-xxl align-start">
+    <div>
+      <h3 class="h3">Network Security</h3>
+      <p>
+        Working knowledge of TCP/IP, DNS, HTTP/HTTPS, TLS, ports, protocols, firewalls, and IDS/IPS
+        concepts, applied through hands-on packet analysis and reconnaissance.
+      </p>
+      <ul class="tool-list mt-sm">
+        <li><span class="mono accent">Wireshark</span> → packet-level traffic analysis</li>
+        <li><span class="mono accent">Nmap</span> → host/service discovery and enumeration</li>
+        <li><span class="mono accent">Burp Suite</span> → HTTP/web security testing</li>
+        <li><span class="mono accent">Elastic Stack</span> → centralized telemetry and investigation</li>
+      </ul>
+    </div>
+    <div class="card pill-row wrap-content">
+      {{ range $d.networkSecurityTags }}<span class="pill">{{ . }}</span>{{ end }}
+    </div>
+  </div>
+
+  <div class="mt-xxl">
+    <h3 class="h3">Information Security &amp; ISMS Assessment Lab</h3>
+    <p class="tag-amber">Simulated / academic information security assessment</p>
+    <p class="lede-sm">
+      A simulated ISMS gap-assessment exercise for a fictional small organization — asset inventory,
+      threat/vulnerability identification, risk register, control-gap analysis, and a risk treatment
+      plan, structured around ISO 27001 concepts.
+    </p>
+    <div class="card mt-md table-wrap">
+      {{ partial "pipeline.html" (dict "steps" $d.ismsWorkflow "direction" "horizontal") }}
+    </div>
+    <div class="pill-row mt-md">
+      {{ range $d.ismsChecklist }}<span class="pill">{{ . }}</span>{{ end }}
+    </div>
+    <p class="fine-print">
+      This is an academic/simulated exercise, not a real client engagement or professional ISO 27001
+      implementation.
+    </p>
+  </div>
+</section>

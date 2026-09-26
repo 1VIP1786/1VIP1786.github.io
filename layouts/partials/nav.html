@@ -1,0 +1,32 @@
+{{ $profile := .Site.Data.site.profile }}
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-badge">VP</span>
+      <span class="brand-name">{{ $profile.name }}</span>
+    </a>
+
+    <nav class="main-nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+
+    <div class="header-actions">
+      <a href="{{ $profile.resumePdf | relURL }}" target="_blank" rel="noopener" class="btn btn-secondary btn-small resume-desktop-only">Resume</a>
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+  <nav class="mobile-nav">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+    <a href="{{ $profile.resumePdf | relURL }}" target="_blank" rel="noopener" class="mobile-resume-link">Download Resume →</a>
+  </nav>
+</header>

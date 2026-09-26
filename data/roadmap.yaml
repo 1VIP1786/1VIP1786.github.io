@@ -1,0 +1,9 @@
+- title: "Detection-as-Code (Planned)"
+  pipeline: ["Detection Rule", "Version Control", "Automated Testing", "ATT&CK Mapping", "Deployment", "Validation"]
+  note: "Moving detection logic from ad-hoc Kibana queries into version-controlled, testable rule files."
+- title: "Automated Purple Team Platform (Planned)"
+  pipeline: ["ATT&CK Technique", "Atomic Red Team", "Telemetry", "Detection", "Alert", "Investigation", "Coverage Measurement"]
+  note: "Automating the simulate → detect → measure loop to track ATT&CK coverage over time."
+- title: "Security Automation / SOAR (Planned)"
+  pipeline: ["Alert", "Python / FastAPI", "IOC Enrichment", "Risk Scoring", "Investigation", "Response"]
+  note: "A lightweight FastAPI service to enrich alerts with IOC context and basic risk scoring."

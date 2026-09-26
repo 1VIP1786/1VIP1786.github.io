@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="{{ site.Params.author }}">
+<meta name="keywords" content="{{ site.Params.keywords }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ site.Title }}">
+<meta property="og:description" content="{{ site.Params.description }}">
+<meta property="og:image" content="{{ "og-image.svg" | absURL }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ site.Title }}">
+<meta name="twitter:description" content="{{ site.Params.description }}">
+<meta name="twitter:image" content="{{ "og-image.svg" | absURL }}">
+
+<!-- Structured data: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Site.Data.site.profile.name }}",
+  "jobTitle": "Cybersecurity Analyst (SOC / SIEM / Threat Detection)",
+  "url": "{{ .Permalink }}",
+  "sameAs": ["{{ .Site.Data.site.profile.github }}", "{{ .Site.Data.site.profile.linkedin }}"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vadodara",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">

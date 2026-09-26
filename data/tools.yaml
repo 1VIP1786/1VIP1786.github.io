@@ -1,0 +1,24 @@
+- category: "SIEM / Detection"
+  items:
+    - name: "Elastic Stack"
+      use: "Core SIEM: Elasticsearch for storage/search, Logstash for ingestion, Kibana for investigation and dashboards."
+    - name: "Sysmon"
+      use: "Primary Windows telemetry source — process, network, file, registry, and DNS events."
+    - name: "Winlogbeat"
+      use: "Ships Windows event logs (including Sysmon) into the Logstash/Elasticsearch pipeline."
+    - name: "Atomic Red Team"
+      use: "Generates adversary technique simulations to produce realistic telemetry for detection testing."
+- category: "Network Security"
+  items:
+    - name: "Wireshark"
+      use: "Packet-level traffic analysis to validate and enrich network-based detections."
+    - name: "Nmap"
+      use: "Host/service discovery and enumeration for the security assessment lab."
+- category: "Web Security"
+  items:
+    - name: "Burp Suite"
+      use: "Manual and semi-automated web application testing against OWASP Top 10 categories."
+- category: "Security Testing"
+  items:
+    - name: "Metasploit"
+      use: "Controlled exploit validation in an isolated lab environment to confirm scan findings."

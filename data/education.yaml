@@ -1,0 +1,10 @@
+- degree: "M.Tech in Cybersecurity"
+  school: "Parul Institute of Engineering and Technology, Parul University, Vadodara"
+  period: "2025 – Expected June 2027"
+  detail: "Dissertation: \"Detection and Analysis of Adversary Techniques Using Sysmon Telemetry and MITRE ATT&CK Framework\" (in progress)."
+  emphasis: true
+- degree: "B.Tech in Information Technology"
+  school: "Parul University, Vadodara"
+  period: ""
+  detail: ""
+  emphasis: false

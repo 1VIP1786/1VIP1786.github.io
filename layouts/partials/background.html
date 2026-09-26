@@ -1,0 +1,87 @@
+<section id="background" class="section section-bordered">
+  <p class="eyebrow">Skills, Growth &amp; Background</p>
+  <h2 class="h2">Skills</h2>
+  <div class="grid-3 mt-md">
+    {{ range .Site.Data.skills }}
+      <div class="card">
+        <h3 class="accent-heading">{{ .category }}</h3>
+        <div class="pill-row mt-sm">
+          {{ range .items }}<span class="pill">{{ . }}</span>{{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  <p class="fine-print">
+    Supporting infrastructure skills (Docker, Kubernetes, Terraform, etc.) are a technical advantage
+    for understanding what I'm securing — not the primary career focus of this portfolio.
+  </p>
+
+  <h2 class="h2 mt-xxl">Security Engineering Roadmap</h2>
+  <p class="lede-sm">Implemented work is documented above. The three tracks below are planned/future work, not yet built.</p>
+  <div class="grid-3 mt-md">
+    {{ range .Site.Data.roadmap }}
+      <div class="card">
+        <span class="pill pill-amber">Planned</span>
+        <h3 class="card-title mt-sm">{{ .title }}</h3>
+        <div class="mt-sm small">
+          {{ partial "pipeline.html" (dict "steps" .pipeline "direction" "vertical") }}
+        </div>
+        <p class="muted small mt-sm">{{ .note }}</p>
+      </div>
+    {{ end }}
+  </div>
+
+  {{ $cf := .Site.Data.current_focus }}
+  <div class="grid-2 mt-lg">
+    <div class="card">
+      <h3 class="green-heading">Current Hands-on Strengths</h3>
+      <ul class="list-check mt-sm">{{ range $cf.strengths }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+    <div class="card">
+      <h3 class="amber-heading">Currently Developing</h3>
+      <ul class="list-check mt-sm">{{ range $cf.developing }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+  </div>
+
+  <h2 class="h2 mt-xxl">Experience &amp; Training</h2>
+  <div class="stack mt-md">
+    {{ range .Site.Data.experience }}
+      <div class="card">
+        <div class="row-between">
+          <h3 class="card-title">{{ .role }}</h3>
+          <span class="pill">{{ .type }}</span>
+        </div>
+        <p class="muted small">{{ .org }}</p>
+        <ul class="list-check mt-sm">{{ range .points }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+    {{ end }}
+  </div>
+
+  {{ $r := .Site.Data.research }}
+  <h2 class="h2 mt-xxl">Research</h2>
+  <div class="card mt-md">
+    <span class="pill">{{ $r.type }}</span>
+    <h3 class="card-title mt-xs">{{ $r.title }}</h3>
+    <dl class="def-list mt-sm">
+      <dt>Objective</dt><dd>{{ $r.objective }}</dd>
+      <dt>Methodology</dt><dd>{{ $r.methodology }}</dd>
+      <dt>Findings</dt><dd>{{ $r.findings }}</dd>
+      <dt>Security Implications</dt><dd>{{ $r.implications }}</dd>
+      <dt>Future Direction</dt><dd>{{ $r.future }}</dd>
+    </dl>
+  </div>
+
+  <h2 class="h2 mt-xxl">Education</h2>
+  <div class="stack mt-md">
+    {{ range .Site.Data.education }}
+      <div class="card {{ if .emphasis }}card-emphasis{{ end }}">
+        <div class="row-between">
+          <h3 class="{{ if .emphasis }}edu-title-emphasis{{ else }}edu-title{{ end }}">{{ .degree }}</h3>
+          {{ if .period }}<span class="mono small muted">{{ .period }}</span>{{ end }}
+        </div>
+        <p class="muted small">{{ .school }}</p>
+        {{ if .detail }}<p class="mt-xs">{{ .detail }}</p>{{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

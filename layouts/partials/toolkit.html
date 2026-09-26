@@ -1,0 +1,39 @@
+<section id="toolkit" class="section section-bordered">
+  <p class="eyebrow">Toolkit</p>
+  <h2 class="h2">Security Tools &amp; Frameworks</h2>
+  <p class="lede">
+    Tools I use hands-on in the lab above, and the frameworks that structure how I think about
+    detection, risk, and security posture.
+  </p>
+
+  <h3 class="h4 mt-xl">Tools — by role in the workflow</h3>
+  <div class="grid-2 mt-md">
+    {{ range .Site.Data.tools }}
+      <div class="card">
+        <h4 class="accent-heading">{{ .category }}</h4>
+        <ul class="tool-list">
+          {{ range .items }}
+            <li>
+              <span class="mono tool-name">{{ .name }}</span>
+              <p class="muted small">{{ .use }}</p>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+
+  <h3 class="h4 mt-xl">Frameworks — applied, not certified</h3>
+  <div class="grid-2 mt-md">
+    {{ range .Site.Data.frameworks }}
+      <div class="card">
+        <h4 class="card-title">{{ .name }}</h4>
+        <p>{{ .blurb }}</p>
+      </div>
+    {{ end }}
+  </div>
+  <p class="fine-print">
+    Framework knowledge reflects hands-on/academic application in lab and coursework contexts — not
+    formal certification unless separately listed under Education/Certifications.
+  </p>
+</section>

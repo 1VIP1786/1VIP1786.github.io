@@ -1,0 +1,10 @@
+<section class="metrics-strip">
+  <div class="metrics-inner">
+    {{ range .Site.Data.site.metrics }}
+      <div class="metric">
+        <div class="metric-value">{{ .value }}</div>
+        <div class="metric-label">{{ .label }}</div>
+      </div>
+    {{ end }}
+  </div>
+</section>

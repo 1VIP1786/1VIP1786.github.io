@@ -1,0 +1,14 @@
+- category: "Security Operations"
+  items: ["SIEM", "SOC Monitoring", "Alert Triage", "Threat Hunting", "Incident Investigation", "Detection Engineering", "Log Analysis"]
+- category: "Security Tools"
+  items: ["Elastic Stack", "Elasticsearch", "Logstash", "Kibana", "Sysmon", "Winlogbeat", "Atomic Red Team", "Wireshark", "Nmap", "Burp Suite", "Metasploit"]
+- category: "Security Frameworks"
+  items: ["MITRE ATT&CK", "NIST CSF", "CIS Controls", "ISO 27001 / ISMS", "OWASP Top 10"]
+- category: "Networking"
+  items: ["TCP/IP", "DNS", "HTTP/HTTPS", "TLS", "Ports & Protocols", "Firewalls", "IDS/IPS", "Packet Analysis"]
+- category: "Systems"
+  items: ["Linux", "Windows", "Windows Event Logs", "PowerShell"]
+- category: "Programming / Automation"
+  items: ["Python", "Bash", "FastAPI"]
+- category: "Supporting Infrastructure"
+  items: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Terraform", "Ansible", "AWS", "GCP"]

@@ -1,0 +1,32 @@
+<section id="investigations" class="section section-bordered">
+  <p class="eyebrow">Methodology, not just tools</p>
+  <h2 class="h2">Security Investigations</h2>
+  <p class="lede">
+    Four simulated attack techniques, each investigated the way a SOC analyst would: telemetry →
+    finding → detection logic → conclusion → recommended response. All activity below was
+    generated with Atomic Red Team in the lab environment described above.
+  </p>
+
+  <div class="grid-2 mt-lg">
+    {{ range .Site.Data.investigations }}
+      <details class="card investigation-card">
+        <summary>
+          <div>
+            <span class="pill pill-tag">{{ .technique }} · {{ .tactic }}</span>
+            <h3 class="card-title mt-xs">{{ .title }}</h3>
+            <p class="muted">{{ .summary }}</p>
+          </div>
+          <span class="expand-icon">+</span>
+        </summary>
+        <div class="investigation-body">
+          <p><strong>Relevant telemetry:</strong> {{ .telemetry }}</p>
+          <p><strong>Finding:</strong> {{ .finding }}</p>
+          <p><strong>Detection logic:</strong> {{ .detectionLogic }}</p>
+          <p><strong>Analyst conclusion:</strong> {{ .conclusion }}</p>
+          <p><strong>Recommended response:</strong> {{ .response }}</p>
+          <p class="fine-print">Simulated activity — generated with Atomic Red Team in a personal lab.</p>
+        </div>
+      </details>
+    {{ end }}
+  </div>
+</section>
